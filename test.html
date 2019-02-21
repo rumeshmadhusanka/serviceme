@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Page</title>
+</head>
+<body>
+<h2 class="h-25">Heading 2</h2>
+<hr class="navbar-shrink">
+<div class="container">
+<p id="para">This is supposed to be a paragraph</p>
+    <input id="inp1" type="text" placeholder="Enter something">
+    <button id="btn1">Click me</button>
+</div>
+<script type="text/javascript">
+    const btn1=document.querySelector("#btn1");
+    const inp1=document.querySelector("#inp1");
+    const out=document.querySelector("#para");
+
+    btn1.addEventListener("click",()=>{
+        const value=inp1.value;
+        out.innerHTML=value;
+    });
+
+</script>
+</body>
+</html>
